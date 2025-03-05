@@ -1,0 +1,18 @@
+these steps i perform
+
+sudo apt update
+
+sudo apt install apache2
+
+sudo systemctl status apache2 its active and running
+
+sudo ufw app list  to list all currently available UFW application profiles
+
+sudo ufw allow in "Apache" To only allow traffic on port 80, use the Apache profile
+
+sudo ufw status its active 
+
+
+to check public ip   curl ifconfig.me
+
+http://39.43.187.155    my server public ip 
