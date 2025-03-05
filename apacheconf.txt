@@ -15,4 +15,27 @@ sudo ufw status its active
 
 to check public ip   curl ifconfig.me
 
-http://39.43.187.155    my server public ip 
+http://39.43.187.155    my server public ip
+
+sudo apt install mariadb-server
+
+sudo mysql_secure_installation
+
+sudo mariadb                     This will connect to the MariaDB server as the administrative database user root
+
+
+sudo apt install php libapache2-mod-php php-mysql  installing php
+
+
+ php -v    to check the version
+
+sudo nano /etc/apache2/mods-enabled/dir.conf
+
+add index.php file in this Apache will first look for a file called index.html. We want to tell the web server to prefer PHP files over others, to make Apache look for an index.php file first. If you don’t do that, an index.html file placed in the document root of the application will always take precedence over an index.php file.
+
+sudo systemctl restart apache2
+
+sudo systemctl status apache2   it is running and active 
+
+now lampstack configurtion is completed now i start configuartion of wordpress
+
